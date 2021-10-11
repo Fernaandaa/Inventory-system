@@ -1,16 +1,24 @@
 import React from "react";
+import buyCar from '../../assets/buyCar.png'
 import './Header.css'
 
 
-
-
-const Header  = () => {
-    return (  
-        <div className="container-header">
-        <h1 className="title-header"><i className="fas fa-shopping-cart cart"></i>MercaTodo</h1>
-
-        </div>
-    );
-}
+const Header = () => {
+  return (
+    <>
+      <nav className="menu">
+        <div className="menu__items">
  
-export default Header ;
+            <img src={buyCar} alt="logo" />
+        
+            <h2>Mercatodo</h2>
+        </div>
+        <div className="menu__sesion">
+            <h4>Cerrar Sesión</h4>
+        </div>
+      </nav>
+    </>
+  );
+};
+
+export default Header;
