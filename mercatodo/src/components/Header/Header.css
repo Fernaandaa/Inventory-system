@@ -1,0 +1,16 @@
+.container-header{
+    width: 100%;
+    background-color: rgb(77, 184, 82, 80%);
+}
+.container-header{
+    display:flex;
+    padding: 2px;
+}
+.cart{
+    font-size: 30px;
+    color: white;
+}
+.title-header{
+    color: #fff;
+    font-size: 30px;
+}
