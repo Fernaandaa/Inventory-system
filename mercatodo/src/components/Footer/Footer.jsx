@@ -6,7 +6,7 @@ const Footer = () => {
     return ( 
         <div className="container-footer">
         <h1 className="title-footer">Desarrollado por:</h1>
-        <i className="fab fa-github github"></i> 
+        <a href="https://github.com/Fernaandaa/Inventory-system" target="blank"><i className="fab fa-github github"></i> </a>
 
         </div>
      );
