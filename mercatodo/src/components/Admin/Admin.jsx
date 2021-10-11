@@ -1,9 +1,10 @@
 import React from "react";
-import Header from "../Header/Header";
+
+
 const Admin = () => {
   return (
     <>
-      <Header />
+     
       <div>
         <h2>Hola Admin</h2>
         <button>Filtrar</button>

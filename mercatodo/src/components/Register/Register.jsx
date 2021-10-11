@@ -1,19 +1,20 @@
 import React, { useState } from "react";
-import "./Login.css";
 import { Link } from "react-router-dom"
 
 
-const Login = () => {
+const Register = () => {
 
     //State para iniciar sesion
     const [usuario, setGuardarUsuario] = useState({
+        nombre:'',
         email: '',
-        password: ''
+        password: '',
+        confirmar:'',
     });
 
     //Extraer del usuario
 
-    const { email, password } = usuario;
+    const { nombre, email, password, confirmar } = usuario;
 
     const onChange = e => {
         setGuardarUsuario({
@@ -27,6 +28,8 @@ const Login = () => {
     //Cuando el usuario quiere iniciar sesion
     const onSubmit = e => {
         e.preventDefault();
+
+        
     }
 
 
@@ -34,7 +37,7 @@ const Login = () => {
         <>
             <div className="form-usuario">
                 <div className="contenedor-form ">
-                    <h1 className="title-login">INICIAR SESION</h1>
+                    <h1 className="title-login">Registrese para continuar</h1>
 
                     <form
                         onSubmit={onSubmit}
@@ -43,9 +46,19 @@ const Login = () => {
                         <div className="campo-form">
 
                             <input type="text"
+                                id="Nombre"
+                                name="Nombre"
+                                placeholder="Tu Nombre"
+                                value={nombre}
+                                onChange={onChange}
+                            />
+                        </div>
+                        <div className="campo-form">
+
+                            <input type="email"
                                 id="email"
                                 name="email"
-                                placeholder="Tu email"
+                                placeholder="Tu Email"
                                 value={email}
                                 onChange={onChange}
                             />
@@ -59,19 +72,26 @@ const Login = () => {
                                 onChange={onChange}
                             />
                         </div>
+                        <div className="campo-form">
+                            <input type="password"
+                                id="confirmar"
+                                name="confirmar"
+                                placeholder="Repite tu Password"
+                                value={confirmar}
+                                onChange={onChange}
+                            />
+                        </div>
 
 
                     </form>
-                    <Link to="/registro" className="link">
-                        Obtener cuenta
+                    <Link to="/" className="link">
+                        Volver a Iniciar Sesion
                     </Link>
                 </div>
 
             </div>
             <div className="container-btn">
-            <Link to="/admin" className="link">
-                <input className="buttom" type="submit" value="Iniciar Sesion" />
-                </Link>
+                <input className="buttom" type="submit" value="Registrarme" />
             </div>
 
         </>
@@ -82,5 +102,5 @@ const Login = () => {
 
 }
 
-export default Login;
+export default Register;
 
