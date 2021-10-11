@@ -1,15 +1,26 @@
 import React from "react";
 import Header from "./Header";
+import Search from '../assets/lupa.png'
 const Admin = () => {
   return (
     <>
       <Header />
-      <div>
-        <h2>Hola Admin</h2>
-        <button>Filtrar</button>
+      <div className="admin__details">
+        <div className="admin__filter">
+          <h2>Hola Admin</h2>
+          <button>Filtrar</button>
+        </div>
+        <div className="admin__input">
+          <input type="text" placeholder="Buscar..."/>
+          <img src={Search} alt="Lupa" />
+        </div>
+        <div className="admin__add">
+          <button>Agregar</button>
+        </div>
       </div>
-      
-      <table class="table table-bordered">
+
+    <div className="tableContainer">
+    <table class="tableItem table-bordered">
         <thead>
           <tr>
             <th scope="col">Id</th>
@@ -51,6 +62,8 @@ const Admin = () => {
           </tr>
         </tbody>
       </table>
+    </div>
+      
     </>
   );
 };

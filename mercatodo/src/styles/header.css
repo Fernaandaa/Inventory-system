@@ -20,3 +20,50 @@
     color: #ffffff;
     margin-right: 1rem;
 }
+.admin__details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.admin__filter h2{
+    color: #616161;
+    font-size: 20px;
+    font-weight: 400;
+}
+.admin__filter button{
+    border-radius: 6px;
+    background: #2469A0;
+    border: none;
+    color: #ffffff;
+    margin-bottom: 10px
+}
+.admin__input input{
+    position: relative;
+    border-radius: 10px;
+    width: 300px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: none;
+    height: 40px;
+}
+.admin__input img{
+    position: absolute;
+    width: 19px;
+    left: 901px;
+    top: 104px;
+}
+.admin__add button{
+    border-radius: 6px;
+    background: #2469A0;
+    border: none;
+    color: #ffffff;
+    margin-bottom: 10px
+}
+.tableContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.tableItem{
+    width: 90%;
+}
