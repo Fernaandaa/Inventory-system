@@ -29,7 +29,7 @@ const Admin = () => {
             <td>Existe</td>
             <td>01/02/2021</td>
             <td>Agranel</td>
-            <td>Arroz doña pepa</td>
+            <td>Arroz blanquita</td>
           </tr>
           <tr>
             <th scope="row">2</th>
