@@ -1,0 +1,13 @@
+.container-footer {
+  margin-top: 20px;
+  background-color: rgb(77, 184, 82, 80%);
+}
+.title-footer {
+  color: white;
+}
+.github {
+  display: block;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+}

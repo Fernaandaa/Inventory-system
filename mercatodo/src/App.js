@@ -1,11 +1,16 @@
 
 import './App.css';
+import Footer from './components/Footer/Footer'
+import Login from './components/Login/Login'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hola mundo</h1>
-    </div>
+    <>
+  
+    <Login/>
+    <Footer/>
+    </>
+  
   );
 }
 
