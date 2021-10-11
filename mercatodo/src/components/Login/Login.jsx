@@ -31,14 +31,14 @@ const Login = () => {
     return (
         <>
         <div className="form-usuario">
-            <div className="contenedor-form sombra-dark">
+            <div className="contenedor-form ">
                 <h1>INICIAR SESION</h1>
 
                 <form
                     onSubmit={onSubmit}
                 
                 >
-                    <div className="campo-form">
+                    <div className="campo-form 2">
             
                         <input type="text"
                             id="email"
@@ -58,7 +58,7 @@ const Login = () => {
                         />
                     </div>
                     <div className="campo">
-                        <input className="btn btn-primario btn-block" type="submit" value="Iniciar Sesion" />
+                        <input className="btn" type="submit" value="Iniciar Sesion" />
                     </div>
                    
                 </form>
