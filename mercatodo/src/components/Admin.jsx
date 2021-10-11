@@ -27,7 +27,7 @@ const Admin = () => {
             <td>Arroz</td>
             <td>Diana</td>
             <td>Existe</td>
-            <td>01/02/2020</td>
+            <td>01/02/2021</td>
             <td>Agranel</td>
             <td>Arroz doña pepa</td>
           </tr>
